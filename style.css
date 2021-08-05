@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
+
+.menu-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    padding: 30px;
+    display: none;
+    animation: fade-in .5s ease-in;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
