@@ -6,9 +6,13 @@
 a{
     cursor: pointer;
 }
+body{
+    height: 100vh;
+    background-color:whitesmoke;
+}
 
 .menu-container {
-  height: auto;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -18,19 +22,29 @@ a{
 .menu{
     height: 100%;
     width: 50%;
-    background-color: aqua;
+    background-color: whitesmoke;
     padding: 30px;
     display: none;
-    animation: fade-in .5s ease-in;
+
 }
 
 @keyframes fade-in {
     0%{
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-30px);
     }
-    50%{
+    100%{
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);
     }
 }
